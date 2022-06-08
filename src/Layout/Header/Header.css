@@ -5,6 +5,10 @@
   align-items: center;
   height: 100px;
   padding-inline: 20px;
+  position: fixed;
+  top: 0;
+  max-width: 1550px;
+  z-index: 5;
 }
 .nav-link-div {
   width: 100%;
