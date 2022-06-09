@@ -1,0 +1,40 @@
+.team-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 313px;
+}
+.bottom-team-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: linear-gradient(
+    133.3deg,
+    rgba(0, 0, 0, 0.32) 54.34%,
+    rgba(17, 20, 29, 0.32) 127.84%
+  );
+  width: 100%;
+  padding: 20px 10px;
+}
+.bottom-team-box h2 {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: linear-gradient(
+    112.98deg,
+    #fff4d1 8.47%,
+    #f5d28f 23.3%,
+    #675537 91.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 400;
+}
+.bottom-team-box p {
+  letter-spacing: 0.03em;
+  color: #a9a9a9;
+}

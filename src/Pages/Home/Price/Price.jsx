@@ -9,7 +9,7 @@ function Price() {
     <div className="price">
       <div className="price-box">
         <h2 className="noto">Market Price</h2>
-        <p className="kanit">
+        <div>
           <sup>$</sup>
           <CountUp
             end={174.1}
@@ -28,17 +28,16 @@ function Price() {
                   }}
                   delayedCall
                 >
-                  <p className={"kanit"} ref={countUpRef} />
+                  <p className={"kanit"} ref={countUpRef}></p>
                 </VisibilitySensor>
               );
             }}
           </CountUp>
-        </p>
+        </div>
       </div>
       <div className="price-box">
         <h2 className="noto">Total Nodes</h2>
-        <p className="kanit">
-          {" "}
+        <div>
           <CountUp
             end={70}
             duration={8}
@@ -56,17 +55,16 @@ function Price() {
                   }}
                   delayedCall
                 >
-                  <p className={"kanit"} ref={countUpRef} />
+                  <p className={"kanit"} ref={countUpRef}></p>
                 </VisibilitySensor>
               );
             }}
           </CountUp>
-        </p>
+        </div>
       </div>
       <div className="price-box">
         <h2 className="noto">Treasury Invested</h2>
-        <p className="kanit">
-          {" "}
+        <div>
           <CountUp
             end={5}
             duration={2}
@@ -84,16 +82,16 @@ function Price() {
                   }}
                   delayedCall
                 >
-                  <p className={"kanit"} ref={countUpRef} />
+                  <p className={"kanit"} ref={countUpRef}></p>
                 </VisibilitySensor>
               );
             }}
           </CountUp>
-        </p>
+        </div>
       </div>
       <div className="price-box">
         <h2 className="noto">Market Cap</h2>
-        <p className="kanit">
+        <div>
           <sup>$</sup>{" "}
           <CountUp
             end={174}
@@ -112,12 +110,12 @@ function Price() {
                   }}
                   delayedCall
                 >
-                  <p className={"kanit"} ref={countUpRef} />
+                  <p className={"kanit"} ref={countUpRef}></p>
                 </VisibilitySensor>
               );
             }}
           </CountUp>
-        </p>
+        </div>
       </div>
     </div>
   );

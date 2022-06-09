@@ -25,6 +25,7 @@
   background-clip: text;
   text-fill-color: transparent;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .nft-grid {
   display: grid;
