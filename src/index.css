@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Trajan";
+  src: url("./Assets/Trajan\ Pro\ Regular.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,9 @@
 }
 .noto {
   font-family: "Noto Sans", sans-serif;
+}
+.trajan {
+  font-family: "Trajan", sans-serif;
 }
 body {
   background-color: #11141d;
