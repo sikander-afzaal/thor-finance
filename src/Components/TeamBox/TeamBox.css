@@ -48,7 +48,11 @@
   align-items: center;
   flex-direction: column;
   padding: 10px 10px;
-  background: linear-gradient(90deg, #2e62ff99 26.2%, #4b24dc99 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 98, 255, 0.9) 26.2%,
+    rgba(75, 36, 220, 0.9)
+  );
   opacity: 0.9;
   position: absolute;
   left: 0;
