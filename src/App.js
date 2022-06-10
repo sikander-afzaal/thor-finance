@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./Layout/Header/Header";
 import About from "./Pages/Home/About/About";
+import Community from "./Pages/Home/Community/Community";
 import Hero from "./Pages/Home/Hero/Hero";
 import Nft from "./Pages/Home/Nft/Nft";
 import Price from "./Pages/Home/Price/Price";
@@ -18,6 +19,7 @@ function App() {
         <Roadmap />
         <Nft />
         <Team />
+        <Community />
       </div>
     </div>
   );

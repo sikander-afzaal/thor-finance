@@ -1,0 +1,128 @@
+.community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  margin: 3rem 0rem;
+  padding-inline: 20px;
+}
+.bottom-comm {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  column-gap: 3rem;
+}
+.left-comm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.box-com {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.box-com h2 {
+  font-size: 4rem;
+  background: linear-gradient(
+    112.98deg,
+    #fff4d1 8.47%,
+    #f5d28f 23.3%,
+    #675537 91.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 300;
+  line-height: 1;
+}
+.box-com p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+}
+.bottom-comm hr {
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.right-comm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 30px;
+}
+.head-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.head-right {
+  font-size: 1rem;
+  background: linear-gradient(
+    112.98deg,
+    #fff4d1 8.47%,
+    #f5d28f 23.3%,
+    #675537 91.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 300;
+  line-height: 1;
+}
+.row-right-comm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.row-right-comm h3 {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.row-right-comm p {
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 1rem;
+}
+@media screen and (max-width: 1006px) {
+  .community {
+    gap: 5rem;
+    text-align: center;
+  }
+  .bottom-comm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .bottom-comm hr {
+    width: 90%;
+  }
+  .row-right-comm {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 448px) {
+  .left-comm {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+}
