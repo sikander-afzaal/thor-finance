@@ -16,78 +16,97 @@ function Team() {
       title: "Co-Founder/Developer/CEO",
       filter: ["Founders", "Executive", "Development", "Moderators"],
       img: img1,
+      bio: "",
     },
     {
       name: "Preacher",
       title: "Co-Founder/Lead Developer",
       filter: ["Founders", "Development", "Moderators"],
       img: img2,
+      bio: "",
     },
     {
       name: "0xDegenSigma",
       title: "COO/Engineering Manager",
       filter: ["Executive", "Development", "Moderators"],
       img: img3,
+      bio: "Blockchain enthusiast with a passion for decentralization. HR specialist, tech driven & a below average gamer. ",
     },
-    { name: "Sif", title: "", filter: ["Development"], img: img1 },
-    { name: "Forseti", title: "", filter: ["Development"], img: img1 },
-    { name: "Hodr", title: "", filter: ["Development"], img: img1 },
-    { name: "Vali", title: "", filter: ["Development"], img: img1 },
+    { name: "Sif", title: "", filter: ["Development"], img: img1, bio: "" },
+    { name: "Forseti", title: "", filter: ["Development"], img: img1, bio: "" },
+    { name: "Hodr", title: "", filter: ["Development"], img: img1, bio: "" },
+    { name: "Vali", title: "", filter: ["Development"], img: img1, bio: "" },
     {
       name: "Mirmir (Dev Ops)",
       title: "",
       filter: ["Development"],
       img: img1,
+      bio: "",
     },
     {
       name: "Padrino (Technical PM)",
       title: "",
       filter: ["Development"],
       img: img1,
+      bio: "",
     },
     {
       name: "Seaclone (Tester)",
       title: "",
       filter: ["Development"],
       img: img1,
+      bio: "",
     },
     {
       name: "OblivionJT",
       title: "Creative Director",
       filter: ["Design", "Moderators"],
       img: img1,
+      bio: "20+ years in design & marketing for tech b2c/b2b. ”Leverage! :P”",
     },
-    { name: "Wolf CVB", title: "", filter: ["Design"], img: img1 },
-    { name: "Dark Rabbit", title: "", filter: ["Design"], img: img1 },
+    {
+      name: "Wolf CVB",
+      title: "",
+      filter: ["Design"],
+      img: img1,
+      bio: `Film school graduate. 10 years experience in the film industry. Award winning film writer/director & art director signed to A-list production companies internationally. UK music video award nominee. Films streaming on Shorts TV (Prime). Latest script comminised by Academy Award winning studio. Shot with top brands inc: Nike, Adidas, AliBaba, Enterprise, UEFA, Randolph Sunglasses and more.
+“Knowing is not enough. We must apply. Willing is not enough. We must do.” - Bruce Lee`,
+    },
+    { name: "Dark Rabbit", title: "", filter: ["Design"], img: img1, bio: "" },
     {
       name: "Don P",
       title: "Business Developer/Product Manager",
       filter: ["Business", "Moderators"],
       img: img1,
+      bio: `"If the Truth shall kill them, let them die." - Immanuel Kant`,
     },
     {
       name: "Kasparov",
       title: "",
       filter: ["Business"],
       img: img1,
+      bio: "",
     },
     {
-      name: "Niloc",
+      name: "LOKI",
       title: "",
       filter: ["Community"],
       img: img1,
+      bio: "proponent of transparency and ethics within the defi industry. Responsible for communication with community from the core team. There are no zero sum games.",
     },
     {
       name: "Yusuf",
       title: "",
       filter: ["Community"],
       img: img1,
+      bio: "",
     },
     {
       name: "Xcalibur",
       title: "Discord & Mod Manager",
       filter: ["Community", "Moderators"],
       img: img1,
+      bio: "Gaming/community leader since 1998.  Started my crypto journey in 2019 and went full time in 2020.",
     },
   ];
   const [filter, setFilter] = useState("All"); // filter prop
@@ -221,6 +240,7 @@ function Team() {
                             name={el.name}
                             title={el.title}
                             img={el.img}
+                            bio={el.bio}
                           />
                         );
                       })}

@@ -5,6 +5,8 @@
   border-radius: 8px;
   overflow: hidden;
   width: 313px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .bottom-team-box {
   display: flex;
@@ -19,7 +21,8 @@
   width: 100%;
   padding: 20px 10px;
 }
-.bottom-team-box h2 {
+.bottom-team-box h2,
+.person-desc h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background: linear-gradient(
@@ -34,7 +37,61 @@
   text-fill-color: transparent;
   font-weight: 400;
 }
-.bottom-team-box p {
+.bottom-team-box p,
+.person-desc p {
   letter-spacing: 0.03em;
   color: #a9a9a9;
+}
+.overlay-team {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px;
+  background: linear-gradient(90deg, #2e62ff97 26.2%, #4b24dc97 100%);
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 100.5%;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+}
+.team-box:hover {
+  transform: scale(0.95);
+  overflow: visible;
+}
+.team-box:hover .overlay-team {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.overlay-team p:first-child {
+  color: white;
+  text-align: center;
+  max-height: 100%;
+  font-size: 1.1rem;
+  overflow-y: auto;
+}
+.overlay-team hr {
+  width: 100%;
+  background-color: white;
+  height: 1px;
+}
+.person-desc {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.person-desc p {
+  font-size: 0.9rem;
+  color: white;
 }

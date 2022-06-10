@@ -19,6 +19,7 @@
   background: linear-gradient(126.8deg, #bfcfff 8.62%, #8465f8 89.24%);
   opacity: 1;
   filter: blur(400px);
+  pointer-events: none;
 }
 .team-shadow-center {
   position: absolute;

@@ -29,13 +29,13 @@ function Footer() {
         </a>
       </div>
       <div className="foot-social">
-        <a href="#">
+        <a target={"blank"} href="https://discord.com/invite/thornodes">
           <img src={discord} alt="" />
         </a>
-        <a href="#">
+        <a target={"blank"} href="https://twitter.com/_ThorFinancial">
           <img src={twitter} alt="" />
         </a>
-        <a href="#">
+        <a target={"blank"} href="https://thornodes.medium.com/">
           <img src={circle} alt="" />
         </a>
       </div>

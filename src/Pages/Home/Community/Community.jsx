@@ -10,12 +10,16 @@ function Community() {
       <div className="bottom-comm">
         <div className="left-comm">
           <div className="box-com">
-            <img src={twitter} alt="" />
+            <a target={"blank"} href="https://twitter.com/_ThorFinancial">
+              <img src={twitter} alt="" />
+            </a>
             <h2 className="kanit">54.9K</h2>
             <p className="kanit">FOLLOWERS</p>
           </div>
           <div className="box-com">
-            <img src={discord} alt="" />
+            <a target={"blank"} href="https://discord.com/invite/thornodes">
+              <img src={discord} alt="" />
+            </a>
             <h2 className="kanit">47,109</h2>
             <p className="kanit">ASGARDIANS</p>
           </div>
@@ -24,7 +28,9 @@ function Community() {
         <div className="right-comm">
           <div className="head-right">
             <h2 className="kanit">NEWS {"&"} UPDATES</h2>
-            <img src={circle} alt="" />
+            <a target={"blank"} href="https://thornodes.medium.com/">
+              <img src={circle} alt="" />
+            </a>
           </div>
           <div className="row-right-comm">
             <h3 className="kanit">Gods of Asgard — Development Update</h3>

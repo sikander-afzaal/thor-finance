@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   transition: all 0.5s ease-in-out;
-  z-index: 5;
+  z-index: 25;
 }
 .header {
   width: 100%;
@@ -127,6 +127,7 @@
     right: -500px;
     top: 0;
     height: 100%;
+    z-index: 50;
     background-color: white;
     flex-direction: column;
     justify-content: center;
