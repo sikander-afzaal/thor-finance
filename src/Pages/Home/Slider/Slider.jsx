@@ -55,10 +55,13 @@ function Slider() {
       <h1 className="heading">ECOSYSTEM</h1>
       <Splide
         options={{
+          type: "loop",
+          pauseOnHover: false,
+          pauseOnFocus: false,
           rewind: true,
           focus: "center",
           pagination: false,
-          arrows: false,
+          arrows: true,
           perPage: 2.5,
           perMove: 1,
           direction: "ltr",
@@ -73,6 +76,7 @@ function Slider() {
             },
             600: {
               perPage: 1,
+              arrows: false,
             },
           },
         }}

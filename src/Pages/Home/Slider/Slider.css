@@ -14,6 +14,18 @@
 .slider .splide__track {
   padding: 20px 20px !important;
 }
+.slider .splide__arrow {
+  width: 20% !important;
+  height: 100% !important;
+  border-radius: 0% !important;
+  opacity: 0 !important;
+}
+.slider .splide__arrow--next {
+  right: 0 !important;
+}
+.slider .splide__arrow--prev {
+  left: 0 !important;
+}
 @media screen and (max-width: 600px) {
   .splide__slide {
     display: flex;
