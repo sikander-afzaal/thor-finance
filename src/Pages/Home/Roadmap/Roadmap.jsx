@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 import "./Roadmap.css";
+
 import tick from "../../../Assets/tick.svg";
 import Q1 from "../../../Assets/Q1 (Stroke).svg";
 import Q2 from "../../../Assets/Q2 (Stroke).svg";

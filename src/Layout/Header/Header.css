@@ -116,7 +116,7 @@
   .mobile {
     display: block;
     position: relative;
-    z-index: 7;
+    z-index: 54;
     cursor: pointer;
   }
   .black-icon {
