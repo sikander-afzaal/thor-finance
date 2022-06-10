@@ -18,28 +18,30 @@ function Header() {
   }, []);
 
   return (
-    <div className={`header ${black ? "black-header" : ""}`}>
-      <img src={logo} alt="" />
-      <div className={`nav-link-div ${header ? "open-header" : ""}`}>
-        <a href="#" className="nav-link kanit">
-          Overview
-        </a>
-        <a href="#" className="nav-link kanit">
-          EcoSystem
-        </a>
-        <a href="#" className="nav-link kanit">
-          Roadmap
-        </a>
-        <a href="#" className="nav-link kanit">
-          Team
-        </a>
-        <button className="purple-btn kanit">Launch App</button>
+    <div className={`header-container ${black ? "black-header" : ""}`}>
+      <div className={"header"}>
+        <img src={logo} alt="" />
+        <div className={`nav-link-div ${header ? "open-header" : ""}`}>
+          <a href="#" className="nav-link kanit">
+            Overview
+          </a>
+          <a href="#" className="nav-link kanit">
+            EcoSystem
+          </a>
+          <a href="#" className="nav-link kanit">
+            Roadmap
+          </a>
+          <a href="#" className="nav-link kanit">
+            Team
+          </a>
+          <button className="purple-btn kanit">Launch App</button>
+        </div>
+        <FontAwesomeIcon
+          onClick={() => setHeader((prev) => !prev)}
+          icon={header ? faXmark : faBars}
+          className={`mobile ${header ? "black-icon" : ""}`}
+        />
       </div>
-      <FontAwesomeIcon
-        onClick={() => setHeader((prev) => !prev)}
-        icon={header ? faXmark : faBars}
-        className={`mobile ${header ? "black-icon" : ""}`}
-      />
     </div>
   );
 }

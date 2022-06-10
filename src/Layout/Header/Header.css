@@ -1,3 +1,13 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+}
 .header {
   width: 100%;
   display: flex;
@@ -5,20 +15,22 @@
   align-items: center;
   height: 100px;
   padding-inline: 20px;
-  position: fixed;
-  top: 0;
   max-width: 1550px;
-  transition: all 0.5s ease-in-out;
-  z-index: 5;
+  gap: 90px;
 }
+
 .black-header {
   background-color: #11141d;
+}
+.header img {
+  flex: 0.1;
 }
 .nav-link-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 0.9;
 }
 .nav-link {
   color: white;

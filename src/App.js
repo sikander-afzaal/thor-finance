@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Layout/Footer/Footer";
 import Header from "./Layout/Header/Header";
 import About from "./Pages/Home/About/About";
 import Community from "./Pages/Home/Community/Community";
@@ -11,15 +12,16 @@ import Team from "./Pages/Home/Team/Team";
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Hero />
       <div className="container">
-        <Header />
-        <Hero />
         <About />
         <Price />
         <Roadmap />
         <Nft />
         <Team />
         <Community />
+        <Footer />
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ function Price() {
           <sup>$</sup>
           <CountUp
             end={174.1}
-            duration={8}
+            duration={5}
             suffix="M+"
             start={viewPortEntered ? null : 0}
           >
@@ -40,7 +40,7 @@ function Price() {
         <div>
           <CountUp
             end={70}
-            duration={8}
+            duration={5}
             suffix="K"
             start={viewPortEntered ? null : 0}
           >
@@ -95,7 +95,7 @@ function Price() {
           <sup>$</sup>{" "}
           <CountUp
             end={174}
-            duration={8}
+            duration={5}
             suffix="M"
             start={viewPortEntered ? null : 0}
           >
