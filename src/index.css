@@ -20,3 +20,7 @@
 body {
   background-color: #11141d;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}

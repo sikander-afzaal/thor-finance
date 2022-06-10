@@ -90,13 +90,13 @@ function Team() {
       img: img1,
     },
   ];
-  const [filter, setFilter] = useState("All");
-  const [filteredArray, setFilteredArray] = useState(data);
-  const [groupedArray, setGroupedArray] = useState();
-  const [openFilter, setOpenFilter] = useState(false);
+  const [filter, setFilter] = useState("All"); // filter prop
+  const [filteredArray, setFilteredArray] = useState(data); //filtered array
+  const [groupedArray, setGroupedArray] = useState(); // regrouped array
+  const [openFilter, setOpenFilter] = useState(false); // open side filter mobile
   useEffect(() => {
     if (filter !== "All") {
-      const filtered = data.filter((el) => el.filter.includes(filter));
+      const filtered = data.filter((el) => el.filter.includes(filter)); // filtering data
       setFilteredArray(filtered);
     } else {
       setFilteredArray(data);
@@ -104,6 +104,7 @@ function Team() {
   }, [filter]);
 
   useEffect(() => {
+    //regrouping array into groups of multiple arrays in a single array (group of 6)
     let temp = [];
     let newArr = [];
     filteredArray.forEach((elem, idx) => {
@@ -120,6 +121,7 @@ function Team() {
   }, [filteredArray]);
 
   const filterHandler = (e) => {
+    //filter prop handler
     const active = document.querySelector(".active-filter");
     const filterVar = e.target.dataset.filter;
     active.classList.remove("active-filter");
@@ -128,7 +130,7 @@ function Team() {
     setOpenFilter(false);
   };
   return (
-    <div className="team">
+    <div id="team" className="team">
       <h1 className="heading trajan">Team</h1>
       <div className="team-grid">
         <FontAwesomeIcon

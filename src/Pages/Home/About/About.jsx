@@ -3,7 +3,7 @@ import "./About.css";
 import vid from "../../../Assets/hammer.mp4";
 function About() {
   return (
-    <div className="about">
+    <div id="over" className="about">
       <div className="left-about">
         <h1 className="trajan">
           Next Generation Hybrid Protocol on the Avalanche Ecosystem

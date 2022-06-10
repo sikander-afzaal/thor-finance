@@ -10,7 +10,7 @@ import Q3 from "../../../Assets/Q3 (Stroke).svg";
 import Q4 from "../../../Assets/Q4 (Stroke).svg";
 function Roadmap() {
   return (
-    <div className="roadmap">
+    <div id="road" className="roadmap">
       <Splide
         options={{
           rewind: true,

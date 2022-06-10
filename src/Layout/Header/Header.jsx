@@ -22,16 +22,32 @@ function Header() {
       <div className={"header"}>
         <img src={logo} alt="" />
         <div className={`nav-link-div ${header ? "open-header" : ""}`}>
-          <a href="#" className="nav-link kanit">
+          <a
+            onClick={() => setHeader(false)}
+            href="#over"
+            className="nav-link kanit"
+          >
             Overview
           </a>
-          <a href="#" className="nav-link kanit">
+          <a
+            onClick={() => setHeader(false)}
+            href="#eco"
+            className="nav-link kanit"
+          >
             EcoSystem
           </a>
-          <a href="#" className="nav-link kanit">
+          <a
+            onClick={() => setHeader(false)}
+            href="#road"
+            className="nav-link kanit"
+          >
             Roadmap
           </a>
-          <a href="#" className="nav-link kanit">
+          <a
+            onClick={() => setHeader(false)}
+            href="#team"
+            className="nav-link kanit"
+          >
             Team
           </a>
           <button className="purple-btn kanit">Launch App</button>
