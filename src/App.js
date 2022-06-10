@@ -15,16 +15,14 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <div className="container">
-        <About />
-        <Price />
-        <Slider />
-        <Roadmap />
-        <Nft />
-        <Team />
-        <Community />
-        <Footer />
-      </div>
+      <About />
+      <Price />
+      <Slider />
+      <Roadmap />
+      <Nft />
+      <Team />
+      <Community />
+      <Footer />
     </div>
   );
 }

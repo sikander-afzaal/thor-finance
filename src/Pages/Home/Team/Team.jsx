@@ -131,6 +131,8 @@ function Team() {
   };
   return (
     <div id="team" className="team">
+      <div className="team-shadow-bottom"></div>
+      <div className="team-shadow-center"></div>
       <h1 className="heading trajan">Team</h1>
       <div className="team-grid">
         <FontAwesomeIcon

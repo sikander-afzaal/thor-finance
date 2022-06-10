@@ -7,6 +7,7 @@
   gap: 4rem;
   margin: 5rem 0rem;
   padding-inline: 20px;
+  max-width: 1550px;
 }
 .bottom-comm {
   display: grid;

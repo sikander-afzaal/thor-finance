@@ -6,6 +6,7 @@
   width: 100%;
   margin-top: 3rem;
   padding-inline: 20px;
+  max-width: 1550px;
 }
 .splide {
   width: 100% !important;

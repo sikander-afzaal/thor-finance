@@ -5,6 +5,34 @@
   padding-inline: 20px;
   width: 100%;
   margin: 6rem 0rem;
+  max-width: 1550px;
+}
+.price-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.price-shadow-left {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 40%;
+  height: 200px;
+  background: linear-gradient(90deg, #60c9b6 26.2%, #8372ec 100%);
+  opacity: 1;
+  filter: blur(400px);
+}
+.price-shadow-right {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 40%;
+  height: 200px;
+  background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
+  opacity: 0.8;
+  filter: blur(400px);
 }
 .price-box {
   display: flex;

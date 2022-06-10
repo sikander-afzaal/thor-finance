@@ -1,5 +1,5 @@
-.container {
-  max-width: 1550px;
+.App {
+  /* max-width: 1550px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;

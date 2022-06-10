@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   padding-inline: 20px;
+  max-width: 1550px;
 }
 .left-about {
   display: flex;

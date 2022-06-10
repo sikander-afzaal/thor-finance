@@ -9,8 +9,38 @@
   padding-bottom: 3rem;
   overflow-x: hidden;
   position: relative;
+  max-width: 1550px;
 }
-
+.nft-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+.nft-shadow-center {
+  z-index: 5;
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #606bc9 26.2%, #8372ec 100%);
+  opacity: 1;
+  filter: blur(400px);
+}
+.nft-shadow-left {
+  position: absolute;
+  width: 231px;
+  height: 70%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
+  opacity: 1;
+  filter: blur(400px);
+}
 .heading {
   font-size: 3.5rem;
   letter-spacing: 0.03em;
@@ -237,8 +267,8 @@
     top: -10%;
   }
 }
-@media screen and (max-width: 624px) {
-  .nft {
+@media screen and (max-width: 715px) {
+  .nft-container {
     margin-top: 4rem;
   }
   .nft-box {

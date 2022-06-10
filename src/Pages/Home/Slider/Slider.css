@@ -8,6 +8,7 @@
   margin-bottom: 5rem;
   padding-inline: 20px;
   overflow-x: hidden;
+  max-width: 1550px;
 }
 
 .slider .splide__track {
