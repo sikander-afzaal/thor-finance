@@ -7,6 +7,7 @@ import Hero from "./Pages/Home/Hero/Hero";
 import Nft from "./Pages/Home/Nft/Nft";
 import Price from "./Pages/Home/Price/Price";
 import Roadmap from "./Pages/Home/Roadmap/Roadmap";
+import Slider from "./Pages/Home/Slider/Slider";
 import Team from "./Pages/Home/Team/Team";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="container">
         <About />
         <Price />
+        <Slider />
         <Roadmap />
         <Nft />
         <Team />
