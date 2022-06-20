@@ -44,8 +44,8 @@ function Team() {
       bio: "",
     },
     {
-      name: "Padrino (Technical PM)",
-      title: "",
+      name: "Padrino",
+      title: "Technical PM",
       filter: ["Development"],
       img: img1,
       bio: "",
@@ -70,7 +70,7 @@ function Team() {
       filter: ["Design"],
       img: img1,
       bio: `Film school graduate. 10 years experience in the film industry. Award winning film writer/director & art director signed to A-list production companies internationally. UK music video award nominee. Films streaming on Shorts TV (Prime). Latest script comminised by Academy Award winning studio. Shot with top brands inc: Nike, Adidas, AliBaba, Enterprise, UEFA, Randolph Sunglasses and more.
-“Knowing is not enough. We must apply. Willing is not enough. We must do.” - Bruce Lee`,
+      “Knowing is not enough. We must apply. Willing is not enough. We must do.” - Bruce Lee`,
     },
     { name: "Dark Rabbit", title: "", filter: ["Design"], img: img1, bio: "" },
     {

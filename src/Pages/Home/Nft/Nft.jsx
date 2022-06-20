@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -16,31 +16,88 @@ function Nft() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [rewards, setRewards] = useState("");
+  const [origin, setOrigin] = useState("");
+  const mobile = window.innerWidth;
+  useEffect(() => {
+    if (mobile > 1184) {
+      switch (name.toLowerCase()) {
+        case "thor":
+          setOrigin("top right");
+          break;
+        case "heimdall":
+          setOrigin("top left");
+          break;
+        case "freya":
+          setOrigin("bottom left");
+          break;
+        case "odin":
+          setOrigin("bottom right");
+          break;
+
+        default:
+          break;
+      }
+    }
+  }, [name]);
+
   const DetailsVariants = {
     enter: {
       opacity: 1,
-      x: 0,
       transition: {
         duration: 1,
       },
     },
+    enterDetails: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.7,
+      },
+    },
     exit: {
       opacity: 0,
-      x: "100vw",
       transition: {
         duration: 1,
       },
     },
     exit2: {
       opacity: 0,
+      scale: 0,
+      transition: {
+        duration: 0.7,
+      },
+    },
+    initial: {
+      opacity: 0,
+    },
+    initialDetails: {
+      opacity: 0,
+      scale: 0,
+    },
+    initialMobile: {
+      opacity: 0,
+      x: "-100vw",
+    },
+    exitMobile: {
+      opacity: 0,
+      x: "100vw",
+      transition: {
+        duration: 1,
+      },
+    },
+    exit2Mobile: {
+      opacity: 0,
       x: "-100vw",
       transition: {
         duration: 1,
       },
     },
-    initial: {
-      opacity: 0,
-      x: "-100vw",
+    enterMobile: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+      },
     },
   };
   return (
@@ -54,11 +111,13 @@ function Nft() {
             <motion.div
               key={detailes}
               variants={DetailsVariants}
-              initial={"initial"}
-              exit={"exit2"}
-              animate={"enter"}
+              initial={mobile > 1184 ? "initialDetails" : "initialMobile"}
+              exit={mobile > 1184 ? "exit2" : "exit2Mobile"}
+              animate={mobile > 1184 ? "enterDetails" : "enterMobile"}
               className="detail-div"
+              style={{ transformOrigin: origin }}
             >
+              {console.log(origin)}
               <img src={big_temp} alt="" className="detail-img" />
               <h2 className="trajan">{name}</h2>
               <div className="cost-div">
@@ -91,9 +150,9 @@ function Nft() {
             <motion.div
               key={detailes}
               variants={DetailsVariants}
-              initial={"initial"}
-              exit={"exit"}
-              animate={"enter"}
+              initial={mobile > 1184 ? "initial" : "initialMobile"}
+              exit={mobile > 1184 ? "exit" : "exitMobile"}
+              animate={mobile > 1184 ? "enter" : "enterMobile"}
               className="nft-grid"
             >
               <div className="nft-box">

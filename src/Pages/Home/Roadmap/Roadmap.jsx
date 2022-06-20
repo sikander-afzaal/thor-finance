@@ -8,9 +8,18 @@ import Q1 from "../../../Assets/Q1 (Stroke).svg";
 import Q2 from "../../../Assets/Q2 (Stroke).svg";
 import Q3 from "../../../Assets/Q3 (Stroke).svg";
 import Q4 from "../../../Assets/Q4 (Stroke).svg";
+import bg from "../../../Assets/roadmap-bg.mp4";
 function Roadmap() {
   return (
     <div id="road" className="roadmap">
+      <video
+        className="road-bg"
+        src={bg}
+        loop
+        muted
+        autoPlay
+        controls={false}
+      />
       <Splide
         options={{
           rewind: true,

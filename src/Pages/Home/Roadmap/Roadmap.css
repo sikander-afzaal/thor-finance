@@ -1,10 +1,3 @@
-.road-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
 .roadmap {
   display: flex;
   justify-content: center;
@@ -14,6 +7,16 @@
   margin-top: 3rem;
   padding-inline: 20px;
   max-width: 1550px;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 4rem;
+}
+.road-bg {
+  position: absolute;
+  left: 0;
+  top: -20%;
+  width: 100%;
+  object-fit: contain;
 }
 .splide {
   width: 100% !important;
@@ -66,12 +69,23 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1500px) {
+  .road-bg {
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 @media screen and (max-width: 722px) {
   .roadmap {
     margin-top: 0;
   }
   .splide__pagination__page {
     margin: 0px 5px;
+  }
+  .road-bg {
+    height: 100%;
   }
 }
 @media screen and (max-width: 450px) {
