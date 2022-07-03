@@ -13,7 +13,6 @@ function Price() {
         <div className="price-box">
           <h2 className="noto">Market Price</h2>
           <div>
-            <sup>$</sup>
             <CountUp
               end={174.1}
               duration={5}
