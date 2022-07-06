@@ -51,20 +51,20 @@ function Nft() {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.3,
+        duration: 0.6,
       },
     },
     exit: {
       opacity: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.4,
       },
     },
     exit2: {
       opacity: 0,
       scale: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.6,
       },
     },
     initial: {

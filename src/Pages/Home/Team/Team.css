@@ -40,9 +40,7 @@
   column-gap: 2rem;
   overflow-x: hidden;
 }
-.right-grid .splide__pagination {
-  bottom: -1.5em !important;
-}
+
 .left-filter {
   width: auto;
   display: flex;
@@ -87,11 +85,18 @@
 .right-grid .splide .splide__pagination__page {
   margin: 0 5px !important;
 }
+.right-grid .splide__pagination {
+  bottom: -3em !important;
+}
 .mobile-filter {
   display: none;
 }
 @media screen and (max-width: 1255px) {
+  .team {
+    overflow: visible;
+  }
   .team-grid {
+    overflow: visible;
     grid-template-columns: auto minmax(calc(320px * 2), 100%);
   }
   .slide-grid {
@@ -104,7 +109,7 @@
     grid-template-rows: none;
   }
   .right-grid .splide__pagination {
-    bottom: 0.5em !important;
+    bottom: -2em !important;
   }
 }
 @media screen and (max-width: 906px) {
