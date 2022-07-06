@@ -51,20 +51,20 @@ function Nft() {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
       },
     },
     exit: {
       opacity: 0,
       transition: {
-        duration: 1,
+        duration: 0.2,
       },
     },
     exit2: {
       opacity: 0,
       scale: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
       },
     },
     initial: {
@@ -101,7 +101,7 @@ function Nft() {
     },
   };
   return (
-    <div className="nft-container">
+    <div id="nft" className="nft-container">
       <div className="nft-shadow-center"></div>
       <div className="nft-shadow-left"></div>
       <div className="nft">
@@ -117,7 +117,6 @@ function Nft() {
               className="detail-div"
               style={{ transformOrigin: origin }}
             >
-              {console.log(origin)}
               <img src={big_temp} alt="" className="detail-img" />
               <h2 className="trajan">{name}</h2>
               <div className="cost-div">

@@ -9,22 +9,22 @@ function Footer() {
     <div className="footer">
       <img src={union} className="union" alt="" />
       <div className="foot-links">
-        <a href="#" className="foot-link kanit">
+        <a href="#home" className="foot-link kanit">
           Home
         </a>
-        <a href="#" className="foot-link kanit">
+        <a href="#over" className="foot-link kanit">
           Overview
         </a>
-        <a href="#" className="foot-link kanit">
+        <a href="#eco" className="foot-link kanit">
           Ecosystem
         </a>
-        <a href="#" className="foot-link kanit">
+        <a href="#nft" className="foot-link kanit">
           Thor NFTs
         </a>
-        <a href="#" className="foot-link kanit">
+        <a href="#team" className="foot-link kanit">
           Thor Team
         </a>
-        <a href="#" className="foot-link kanit">
+        <a href="#community" className="foot-link kanit">
           Community
         </a>
       </div>

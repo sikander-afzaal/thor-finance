@@ -5,7 +5,7 @@ import twitter from "../../../Assets/twitter.svg";
 import discord from "../../../Assets/discord.svg";
 function Community() {
   return (
-    <div className={"community"}>
+    <div id="community" className={"community"}>
       <h1 className="heading">Join the Community</h1>
       <div className="bottom-comm">
         <div className="left-comm">

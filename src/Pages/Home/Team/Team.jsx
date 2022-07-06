@@ -37,8 +37,8 @@ function Team() {
     { name: "Hodr", title: "", filter: ["Development"], img: img1, bio: "" },
     { name: "Vali", title: "", filter: ["Development"], img: img1, bio: "" },
     {
-      name: "Mirmir (Dev Ops)",
-      title: "",
+      name: "Mirmir",
+      title: "Dev Ops",
       filter: ["Development"],
       img: img1,
       bio: "",
@@ -51,8 +51,8 @@ function Team() {
       bio: "",
     },
     {
-      name: "Seaclone (Tester)",
-      title: "",
+      name: "Seaclone",
+      title: "Tester",
       filter: ["Development"],
       img: img1,
       bio: "",
